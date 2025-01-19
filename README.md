@@ -1,0 +1,1 @@
+# zad_12_do_15_szmigielski-2.html
