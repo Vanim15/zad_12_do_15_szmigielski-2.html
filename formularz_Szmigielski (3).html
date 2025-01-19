@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularz Zbierania Informacji</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            border: 1px solid #000;
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 20px;
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="number"] {
+            width: calc(100% - 10px);
+            padding: 5px;
+            margin-bottom: 15px;
+            border: 1px solid #000;
+        }
+
+        .checkbox-group label,
+        .radio-group label {
+            display: block;
+            margin-left: 20px;
+            font-weight: normal;
+        }
+
+        .section {
+            margin-bottom: 20px;
+        }
+
+        button {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            background-color: #ddd;
+            border: 1px solid #000;
+            font-size: 16px;
+        }
+
+        button:hover {
+            background-color: #ccc;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Formularz Zbierania Informacji</h1>
+
+        <form>
+            <div class="section">
+                <label for="name">Imię i Nazwisko:</label>
+                <input type="text" id="name" name="name">
+
+                <label for="birthdate">Data urodzenia:</label>
+                <input type="text" id="birthdate" name="birthdate">
+
+                <label for="email">Adres E-mail:</label>
+                <input type="email" id="email" name="email">
+
+                <label for="phone">Numer Telefonu:</label>
+                <input type="text" id="phone" name="phone">
+
+                <label for="age">Wiek:</label>
+                <input type="number" id="age" name="age">
+            </div>
+
+            <div class="section">
+                <label>Najwyższy poziom wykształcenia:</label>
+                <div class="checkbox-group">
+                    <label><input type="checkbox" name="education" value="Podstawowe"> Podstawowe</label>
+                    <label><input type="checkbox" name="education" value="Średnie"> Średnie</label>
+                    <label><input type="checkbox" name="education" value="Wyższe"> Wyższe</label>
+                    <label><input type="checkbox" name="education" value="Inne"> Inne</label>
+                </div>
+            </div>
+
+            <div class="section">
+                <label for="current-job">Aktualny zawód:</label>
+                <input type="text" id="current-job" name="current-job">
+
+                <label for="experience">Ilość lat doświadczenia w zawodzie:</label>
+                <input type="number" id="experience" name="experience">
+
+                <label>Poprzednie zatrudnienia:</label>
+                <label for="company1">Nazwa firmy:</label>
+                <input type="text" id="company1" name="company1">
+
+                <label for="position1">Stanowisko:</label>
+                <input type="text" id="position1" name="position1">
+
+                <label for="duration1">Okres zatrudnienia:</label>
+                <input type="text" id="duration1" name="duration1">
+
+                <label for="company2">Nazwa firmy:</label>
+                <input type="text" id="company2" name="company2">
+
+                <label for="position2">Stanowisko:</label>
+                <input type="text" id="position2" name="position2">
+
+                <label for="duration2">Okres zatrudnienia:</label>
+                <input type="text" id="duration2" name="duration2">
+            </div>
+
+            <div class="section">
+                <label>Czy chcesz otrzymywać informacje o przyszłych wydarzeniach?</label>
+                <div class="radio-group">
+                    <label><input type="radio" name="events" value="Tak"> Tak</label>
+                    <label><input type="radio" name="events" value="Nie"> Nie</label>
+                </div>
+
+                <label>Preferencje komunikacyjne:</label>
+                <div class="checkbox-group">
+                    <label><input type="checkbox" name="preferences" value="E-mail"> E-mail</label>
+                    <label><input type="checkbox" name="preferences" value="SMS"> SMS</label>
+                    <label><input type="checkbox" name="preferences" value="Telefon"> Telefon</label>
+                </div>
+            </div>
+
+            <button type="submit">Wyślij</button>
+        </form>
+    </div>
+</body>
+</html>
