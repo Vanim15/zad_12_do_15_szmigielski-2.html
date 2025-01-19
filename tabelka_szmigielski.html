@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dane Procesorów</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        table {
+            width: 90%;
+            margin: auto;
+            border-collapse: collapse;
+            text-align: center;
+            font-family: Arial, sans-serif;
+            border: 4px solid red; 
+        }
+
+        th, td {
+            border: 3px solid green; 
+            padding: 10px;
+        }
+
+        .table-header {
+            background-color: red;
+            color: white; 
+            font-weight: bold;
+            font-size: 18px;
+            border: 3px solid yellow;
+        }
+
+        .main-header {
+            background-color: cyan;
+            color: white; 
+            font-weight: bold;
+            font-size: 18px;
+        }
+
+        .header-row th:first-child {
+            background-color: #004080; 
+            color: white;
+        }
+
+        .header-row th {
+            background-color: #d9f2ff; 
+        }
+
+        /* First column */
+        .first-column {
+            background-color: #004080; 
+            color: white;
+        }
+
+        .light-blue {
+            background-color: #d9f2ff; 
+        }
+
+        .footer-row {
+            background-color: cyan;
+            font-weight: bold;
+            color: purple;
+            font-size: 18px;
+            border: 3px solid blue;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <thead>
+            <tr>
+                <th colspan="5" class="main-header">Dane Procesorów – Szmigielski Filip 2Fg2</th>
+            </tr>
+            <tr class="header-row">
+                <th>Model Procesora</th>
+                <th>Liczba Rdzeni</th>
+                <th>Taktowanie</th>
+                <th>Technologia</th>
+                <th>Informacje</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="first-column">Intel Core i9-12900K</td>
+                <td class="light-blue">16</td>
+                <td class="light-blue">Do 5.2 GHz</td>
+                <td class="light-blue">10 nm SuperFin</td>
+                <td class="light-blue">Idealny do gier i wymagających zadań</td>
+            </tr>
+            <tr>
+                <td class="first-column">AMD Ryzen 9 5950X</td>
+                <td class="light-blue">16</td>
+                <td class="light-blue">Do 4.9 GHz</td>
+                <td class="light-blue">7 nm</td>
+                <td class="light-blue">Świetny wybór dla twórców treści</td>
+            </tr>
+            <tr>
+                <td class="first-column">Intel Core i7-12700K</td>
+                <td class="light-blue">12</td>
+                <td class="light-blue">Do 5.0 GHz</td>
+                <td class="light-blue">10 nm SuperFin</td>
+                <td class="light-blue">Dobry balans między wydajnością a ceną</td>
+            </tr>
+            <tr>
+                <td class="first-column">AMD Ryzen 7 5800X</td>
+                <td class="light-blue">8</td>
+                <td class="light-blue">Do 4.7 GHz</td>
+                <td class="light-blue">7 nm</td>
+                <td class="light-blue">Popularny wybór dla graczy</td>
+            </tr>
+            <tr>
+                <td class="first-column">Intel Core i5-12600K</td>
+                <td class="light-blue">10</td>
+                <td class="light-blue">Do 4.9 GHz</td>
+                <td class="light-blue">10 nm SuperFin</td>
+                <td class="light-blue">Dobry dla użytkowników domowych</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="5" class="footer-row">Dane Procesorów</td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>
